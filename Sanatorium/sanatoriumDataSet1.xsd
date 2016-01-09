@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema id="sanatoriumDataSet" targetNamespace="http://tempuri.org/sanatoriumDataSet.xsd" xmlns:mstns="http://tempuri.org/sanatoriumDataSet.xsd" xmlns="http://tempuri.org/sanatoriumDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+<xs:schema id="sanatoriumDataSet1" targetNamespace="http://tempuri.org/sanatoriumDataSet1.xsd" xmlns:mstns="http://tempuri.org/sanatoriumDataSet1.xsd" xmlns="http://tempuri.org/sanatoriumDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="sanatoriumConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="sanatoriumConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Sanatorium.Properties.Settings.GlobalReference.Default.sanatoriumConnectionString" Provider="MySql.Data.MySqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="sanatoriumConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="sanatoriumConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Sanatorium.Properties.Settings.GlobalReference.Default.sanatoriumConnectionString1" Provider="MySql.Data.MySqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="personalTableAdapter" GeneratorDataComponentClassName="personalTableAdapter" Name="personal" UserDataComponentName="personalTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="sanatoriumConnectionString (Settings)" DbObjectName="sanatorium.personal" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="sanatoriumConnectionString1 (Settings)" DbObjectName="sanatorium.personal" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM `personal` WHERE ((`Id_personal` = @p1) AND (`name` = @p2) AND ((@p3 = 1 AND `birthday` IS NULL) OR (`birthday` = @p4)) AND ((@p5 = 1 AND `phone` IS NULL) OR (`phone` = @p6)) AND ((@p7 = 1 AND `email` IS NULL) OR (`email` = @p8)) AND (`address` = @p9))</CommandText>
@@ -41,7 +41,7 @@
                 </InsertCommand>
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>SELECT `Id_personal`, `name`, `birthday`, `phone`, `email`, `address` FROM `personal`</CommandText>
+                    <CommandText>SELECT * FROM `personal`</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
@@ -81,7 +81,7 @@
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="registrationTableAdapter" GeneratorDataComponentClassName="registrationTableAdapter" Name="registration" UserDataComponentName="registrationTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="sanatoriumConnectionString (Settings)" DbObjectName="sanatorium.registration" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="sanatoriumConnectionString1 (Settings)" DbObjectName="sanatorium.registration" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM `registration` WHERE ((`Id_registration` = @p1) AND (`id_vacationers` = @p2) AND (`id_personala` = @p3) AND (`id_mesta` = @p4) AND ((@p5 = 1 AND `today's date` IS NULL) OR (`today's date` = @p6)) AND ((@p7 = 1 AND `from` IS NULL) OR (`from` = @p8)) AND ((@p9 = 1 AND `till` IS NULL) OR (`till` = @p10)) AND ((@p11 = 1 AND `location` IS NULL) OR (`location` = @p12)) AND ((@p13 = 1 AND `info` IS NULL) OR (`info` = @p14)))</CommandText>
@@ -121,7 +121,7 @@
                 </InsertCommand>
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>SELECT `Id_registration`, `id_vacationers`, `id_personala`, `id_mesta`, `today's date`, `from`, `till`, `location`, `info` FROM `registration`</CommandText>
+                    <CommandText>SELECT * FROM `registration`</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
@@ -172,7 +172,7 @@
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="sanatoriyTableAdapter" GeneratorDataComponentClassName="sanatoriyTableAdapter" Name="sanatoriy" UserDataComponentName="sanatoriyTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="sanatoriumConnectionString (Settings)" DbObjectName="sanatorium.sanatoriy" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="sanatoriumConnectionString1 (Settings)" DbObjectName="sanatorium.sanatoriy" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM `sanatoriy` WHERE ((`Id_mesta` = @p1) AND ((@p2 = 1 AND `name_m` IS NULL) OR (`name_m` = @p3)) AND ((@p4 = 1 AND `col_mest` IS NULL) OR (`col_mest` = @p5)) AND ((@p6 = 1 AND `addredd_m` IS NULL) OR (`addredd_m` = @p7)) AND ((@p8 = 1 AND `information` IS NULL) OR (`information` = @p9)))</CommandText>
@@ -203,7 +203,7 @@
                 </InsertCommand>
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>SELECT `Id_mesta`, `name_m`, `col_mest`, `addredd_m`, `information` FROM `sanatoriy`</CommandText>
+                    <CommandText>SELECT * FROM `sanatoriy`</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
@@ -241,7 +241,7 @@
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vacationersTableAdapter" GeneratorDataComponentClassName="vacationersTableAdapter" Name="vacationers" UserDataComponentName="vacationersTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="sanatoriumConnectionString (Settings)" DbObjectName="sanatorium.vacationers" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="sanatoriumConnectionString1 (Settings)" DbObjectName="sanatorium.vacationers" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM `vacationers` WHERE ((`Id_vacationers` = @p1) AND ((@p2 = 1 AND `name_voc` IS NULL) OR (`name_voc` = @p3)) AND ((@p4 = 1 AND `age` IS NULL) OR (`age` = @p5)) AND ((@p6 = 1 AND `telephone` IS NULL) OR (`telephone` = @p7)) AND ((@p8 = 1 AND `Email` IS NULL) OR (`Email` = @p9)) AND ((@p10 = 1 AND `home_address` IS NULL) OR (`home_address` = @p11)))</CommandText>
@@ -275,7 +275,7 @@
                 </InsertCommand>
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>SELECT `Id_vacationers`, `name_voc`, `age`, `telephone`, `Email`, `home_address` FROM `vacationers`</CommandText>
+                    <CommandText>SELECT * FROM `vacationers`</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
@@ -320,7 +320,7 @@
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="sanatoriumDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="sanatoriumDataSet" msprop:Generator_UserDSName="sanatoriumDataSet">
+  <xs:element name="sanatoriumDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="sanatoriumDataSet1" msprop:Generator_UserDSName="sanatoriumDataSet1">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         <xs:element name="personal" msprop:Generator_TableClassName="personalDataTable" msprop:Generator_TableVarName="tablepersonal" msprop:Generator_TablePropName="personal" msprop:Generator_RowDeletingName="personalRowDeleting" msprop:Generator_RowChangingName="personalRowChanging" msprop:Generator_RowEvHandlerName="personalRowChangeEventHandler" msprop:Generator_RowDeletedName="personalRowDeleted" msprop:Generator_UserTableName="personal" msprop:Generator_RowChangedName="personalRowChanged" msprop:Generator_RowEvArgName="personalRowChangeEvent" msprop:Generator_RowClassName="personalRow">

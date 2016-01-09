@@ -1,1 +1,14 @@
 c:\users\andrej\documents\visual studio 2015\Projects\Sanatorium\Sanatorium\bin\Debug\Sanatorium.exe.config
+c:\users\andrej\documents\visual studio 2015\Projects\Sanatorium\Sanatorium\obj\Debug\Sanatorium.csprojResolveAssemblyReference.cache
+c:\users\andrej\documents\visual studio 2015\Projects\Sanatorium\Sanatorium\obj\Debug\Sanatorium.Form1.resources
+c:\users\andrej\documents\visual studio 2015\Projects\Sanatorium\Sanatorium\obj\Debug\Sanatorium.Properties.Resources.resources
+c:\users\andrej\documents\visual studio 2015\Projects\Sanatorium\Sanatorium\obj\Debug\Sanatorium.SQL.resources
+c:\users\andrej\documents\visual studio 2015\Projects\Sanatorium\Sanatorium\obj\Debug\Sanatorium.csproj.GenerateResource.Cache
+C:\Users\Andrej\Documents\Visual Studio 2015\Projects\Sanatorium\Sanatorium\bin\Debug\Sanatorium.exe
+C:\Users\Andrej\Documents\Visual Studio 2015\Projects\Sanatorium\Sanatorium\bin\Debug\Sanatorium.pdb
+C:\Users\Andrej\Documents\Visual Studio 2015\Projects\Sanatorium\Sanatorium\bin\Debug\MySql.Data.dll
+C:\Users\Andrej\Documents\Visual Studio 2015\Projects\Sanatorium\Sanatorium\obj\Debug\Sanatorium.exe
+C:\Users\Andrej\Documents\Visual Studio 2015\Projects\Sanatorium\Sanatorium\obj\Debug\Sanatorium.pdb
+C:\Users\Andrej\Documents\Visual Studio 2015\Projects\Sanatorium\Sanatorium\obj\Debug\Sanatorium.Vacationers2.resources
+C:\Users\Andrej\Documents\Visual Studio 2015\Projects\Sanatorium\Sanatorium\obj\Debug\Sanatorium.Personnel2.resources
+C:\Users\Andrej\Documents\Visual Studio 2015\Projects\Sanatorium\Sanatorium\obj\Debug\Sanatorium.Sanatorium2.resources

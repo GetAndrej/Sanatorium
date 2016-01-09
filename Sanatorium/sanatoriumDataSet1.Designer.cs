@@ -20,9 +20,9 @@ namespace Sanatorium {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("sanatoriumDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("sanatoriumDataSet1")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class sanatoriumDataSet : global::System.Data.DataSet {
+    public partial class sanatoriumDataSet1 : global::System.Data.DataSet {
         
         private personalDataTable tablepersonal;
         
@@ -42,7 +42,7 @@ namespace Sanatorium {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public sanatoriumDataSet() {
+        public sanatoriumDataSet1() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -53,7 +53,7 @@ namespace Sanatorium {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        protected sanatoriumDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected sanatoriumDataSet1(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -178,7 +178,7 @@ namespace Sanatorium {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            sanatoriumDataSet cln = ((sanatoriumDataSet)(base.Clone()));
+            sanatoriumDataSet1 cln = ((sanatoriumDataSet1)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -280,9 +280,9 @@ namespace Sanatorium {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "sanatoriumDataSet";
+            this.DataSetName = "sanatoriumDataSet1";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/sanatoriumDataSet.xsd";
+            this.Namespace = "http://tempuri.org/sanatoriumDataSet1.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tablepersonal = new personalDataTable();
@@ -342,7 +342,7 @@ namespace Sanatorium {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            sanatoriumDataSet ds = new sanatoriumDataSet();
+            sanatoriumDataSet1 ds = new sanatoriumDataSet1();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -675,7 +675,7 @@ namespace Sanatorium {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                sanatoriumDataSet ds = new sanatoriumDataSet();
+                sanatoriumDataSet1 ds = new sanatoriumDataSet1();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1057,7 +1057,7 @@ namespace Sanatorium {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                sanatoriumDataSet ds = new sanatoriumDataSet();
+                sanatoriumDataSet1 ds = new sanatoriumDataSet1();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1377,7 +1377,7 @@ namespace Sanatorium {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                sanatoriumDataSet ds = new sanatoriumDataSet();
+                sanatoriumDataSet1 ds = new sanatoriumDataSet1();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1711,7 +1711,7 @@ namespace Sanatorium {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                sanatoriumDataSet ds = new sanatoriumDataSet();
+                sanatoriumDataSet1 ds = new sanatoriumDataSet1();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2608,7 +2608,7 @@ namespace Sanatorium {
         }
     }
 }
-namespace Sanatorium.sanatoriumDataSetTableAdapters {
+namespace Sanatorium.sanatoriumDataSet1TableAdapters {
     
     
     /// <summary>
@@ -2992,7 +2992,7 @@ namespace Sanatorium.sanatoriumDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::MySql.Data.MySqlClient.MySqlConnection();
-            this._connection.ConnectionString = global::Sanatorium.Properties.Settings.Default.sanatoriumConnectionString;
+            this._connection.ConnectionString = global::Sanatorium.Properties.Settings.Default.sanatoriumConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3001,8 +3001,7 @@ namespace Sanatorium.sanatoriumDataSetTableAdapters {
             this._commandCollection = new global::MySql.Data.MySqlClient.MySqlCommand[1];
             this._commandCollection[0] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT `Id_personal`, `name`, `birthday`, `phone`, `email`, `address` FROM `perso" +
-                "nal`";
+            this._commandCollection[0].CommandText = "SELECT * FROM `personal`";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -3010,7 +3009,7 @@ namespace Sanatorium.sanatoriumDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(sanatoriumDataSet.personalDataTable dataTable) {
+        public virtual int Fill(sanatoriumDataSet1.personalDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -3023,9 +3022,9 @@ namespace Sanatorium.sanatoriumDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual sanatoriumDataSet.personalDataTable GetData() {
+        public virtual sanatoriumDataSet1.personalDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            sanatoriumDataSet.personalDataTable dataTable = new sanatoriumDataSet.personalDataTable();
+            sanatoriumDataSet1.personalDataTable dataTable = new sanatoriumDataSet1.personalDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -3033,14 +3032,14 @@ namespace Sanatorium.sanatoriumDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(sanatoriumDataSet.personalDataTable dataTable) {
+        public virtual int Update(sanatoriumDataSet1.personalDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(sanatoriumDataSet dataSet) {
+        public virtual int Update(sanatoriumDataSet1 dataSet) {
             return this.Adapter.Update(dataSet, "personal");
         }
         
@@ -3778,7 +3777,7 @@ namespace Sanatorium.sanatoriumDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::MySql.Data.MySqlClient.MySqlConnection();
-            this._connection.ConnectionString = global::Sanatorium.Properties.Settings.Default.sanatoriumConnectionString;
+            this._connection.ConnectionString = global::Sanatorium.Properties.Settings.Default.sanatoriumConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3787,8 +3786,7 @@ namespace Sanatorium.sanatoriumDataSetTableAdapters {
             this._commandCollection = new global::MySql.Data.MySqlClient.MySqlCommand[1];
             this._commandCollection[0] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT `Id_registration`, `id_vacationers`, `id_personala`, `id_mesta`, `today\'s " +
-                "date`, `from`, `till`, `location`, `info` FROM `registration`";
+            this._commandCollection[0].CommandText = "SELECT * FROM `registration`";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -3796,7 +3794,7 @@ namespace Sanatorium.sanatoriumDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(sanatoriumDataSet.registrationDataTable dataTable) {
+        public virtual int Fill(sanatoriumDataSet1.registrationDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -3809,9 +3807,9 @@ namespace Sanatorium.sanatoriumDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual sanatoriumDataSet.registrationDataTable GetData() {
+        public virtual sanatoriumDataSet1.registrationDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            sanatoriumDataSet.registrationDataTable dataTable = new sanatoriumDataSet.registrationDataTable();
+            sanatoriumDataSet1.registrationDataTable dataTable = new sanatoriumDataSet1.registrationDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -3819,14 +3817,14 @@ namespace Sanatorium.sanatoriumDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(sanatoriumDataSet.registrationDataTable dataTable) {
+        public virtual int Update(sanatoriumDataSet1.registrationDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(sanatoriumDataSet dataSet) {
+        public virtual int Update(sanatoriumDataSet1 dataSet) {
             return this.Adapter.Update(dataSet, "registration");
         }
         
@@ -4459,7 +4457,7 @@ namespace Sanatorium.sanatoriumDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::MySql.Data.MySqlClient.MySqlConnection();
-            this._connection.ConnectionString = global::Sanatorium.Properties.Settings.Default.sanatoriumConnectionString;
+            this._connection.ConnectionString = global::Sanatorium.Properties.Settings.Default.sanatoriumConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4468,8 +4466,7 @@ namespace Sanatorium.sanatoriumDataSetTableAdapters {
             this._commandCollection = new global::MySql.Data.MySqlClient.MySqlCommand[1];
             this._commandCollection[0] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT `Id_mesta`, `name_m`, `col_mest`, `addredd_m`, `information` FROM `sanator" +
-                "iy`";
+            this._commandCollection[0].CommandText = "SELECT * FROM `sanatoriy`";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -4477,7 +4474,7 @@ namespace Sanatorium.sanatoriumDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(sanatoriumDataSet.sanatoriyDataTable dataTable) {
+        public virtual int Fill(sanatoriumDataSet1.sanatoriyDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -4490,9 +4487,9 @@ namespace Sanatorium.sanatoriumDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual sanatoriumDataSet.sanatoriyDataTable GetData() {
+        public virtual sanatoriumDataSet1.sanatoriyDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            sanatoriumDataSet.sanatoriyDataTable dataTable = new sanatoriumDataSet.sanatoriyDataTable();
+            sanatoriumDataSet1.sanatoriyDataTable dataTable = new sanatoriumDataSet1.sanatoriyDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -4500,14 +4497,14 @@ namespace Sanatorium.sanatoriumDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(sanatoriumDataSet.sanatoriyDataTable dataTable) {
+        public virtual int Update(sanatoriumDataSet1.sanatoriyDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(sanatoriumDataSet dataSet) {
+        public virtual int Update(sanatoriumDataSet1 dataSet) {
             return this.Adapter.Update(dataSet, "sanatoriy");
         }
         
@@ -5131,7 +5128,7 @@ namespace Sanatorium.sanatoriumDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::MySql.Data.MySqlClient.MySqlConnection();
-            this._connection.ConnectionString = global::Sanatorium.Properties.Settings.Default.sanatoriumConnectionString;
+            this._connection.ConnectionString = global::Sanatorium.Properties.Settings.Default.sanatoriumConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5140,8 +5137,7 @@ namespace Sanatorium.sanatoriumDataSetTableAdapters {
             this._commandCollection = new global::MySql.Data.MySqlClient.MySqlCommand[1];
             this._commandCollection[0] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT `Id_vacationers`, `name_voc`, `age`, `telephone`, `Email`, `home_address` " +
-                "FROM `vacationers`";
+            this._commandCollection[0].CommandText = "SELECT * FROM `vacationers`";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -5149,7 +5145,7 @@ namespace Sanatorium.sanatoriumDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(sanatoriumDataSet.vacationersDataTable dataTable) {
+        public virtual int Fill(sanatoriumDataSet1.vacationersDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -5162,9 +5158,9 @@ namespace Sanatorium.sanatoriumDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual sanatoriumDataSet.vacationersDataTable GetData() {
+        public virtual sanatoriumDataSet1.vacationersDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            sanatoriumDataSet.vacationersDataTable dataTable = new sanatoriumDataSet.vacationersDataTable();
+            sanatoriumDataSet1.vacationersDataTable dataTable = new sanatoriumDataSet1.vacationersDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5172,14 +5168,14 @@ namespace Sanatorium.sanatoriumDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(sanatoriumDataSet.vacationersDataTable dataTable) {
+        public virtual int Update(sanatoriumDataSet1.vacationersDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(sanatoriumDataSet dataSet) {
+        public virtual int Update(sanatoriumDataSet1 dataSet) {
             return this.Adapter.Update(dataSet, "vacationers");
         }
         
@@ -5574,7 +5570,7 @@ namespace Sanatorium.sanatoriumDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateUpdatedRows(sanatoriumDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(sanatoriumDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._registrationTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.registration.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -5620,7 +5616,7 @@ namespace Sanatorium.sanatoriumDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateInsertedRows(sanatoriumDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(sanatoriumDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._registrationTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.registration.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -5662,7 +5658,7 @@ namespace Sanatorium.sanatoriumDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateDeletedRows(sanatoriumDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(sanatoriumDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._vacationersTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.vacationers.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -5728,7 +5724,7 @@ namespace Sanatorium.sanatoriumDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public virtual int UpdateAll(sanatoriumDataSet dataSet) {
+        public virtual int UpdateAll(sanatoriumDataSet1 dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

@@ -32,5 +32,35 @@ namespace Sanatorium.Properties {
                 return ((string)(this["sanatoriumConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("server=localhost;user id=root;database=sanatorium;persistsecurityinfo=True")]
+        public string sanatoriumConnectionString1 {
+            get {
+                return ((string)(this["sanatoriumConnectionString1"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("server=localhost;user id=root;persistsecurityinfo=True;database=sanatorium")]
+        public string sanatoriumConnectionString3 {
+            get {
+                return ((string)(this["sanatoriumConnectionString3"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("server=localhost;user id=root;password=123456789;database=sanatorium")]
+        public string sanatoriumConnectionString5 {
+            get {
+                return ((string)(this["sanatoriumConnectionString5"]));
+            }
+        }
     }
 }
