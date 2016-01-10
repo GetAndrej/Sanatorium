@@ -6,7 +6,6 @@ c:\users\andrej\documents\visual studio 2015\Projects\Sanatorium\Sanatorium\obj\
 c:\users\andrej\documents\visual studio 2015\Projects\Sanatorium\Sanatorium\obj\Debug\Sanatorium.csproj.GenerateResource.Cache
 C:\Users\Andrej\Documents\Visual Studio 2015\Projects\Sanatorium\Sanatorium\bin\Debug\Sanatorium.exe
 C:\Users\Andrej\Documents\Visual Studio 2015\Projects\Sanatorium\Sanatorium\bin\Debug\Sanatorium.pdb
-C:\Users\Andrej\Documents\Visual Studio 2015\Projects\Sanatorium\Sanatorium\bin\Debug\MySql.Data.dll
 C:\Users\Andrej\Documents\Visual Studio 2015\Projects\Sanatorium\Sanatorium\obj\Debug\Sanatorium.exe
 C:\Users\Andrej\Documents\Visual Studio 2015\Projects\Sanatorium\Sanatorium\obj\Debug\Sanatorium.pdb
 C:\Users\Andrej\Documents\Visual Studio 2015\Projects\Sanatorium\Sanatorium\obj\Debug\Sanatorium.Vacationers2.resources
@@ -15,3 +14,7 @@ C:\Users\Andrej\Documents\Visual Studio 2015\Projects\Sanatorium\Sanatorium\obj\
 C:\Users\Andrej\Documents\Visual Studio 2015\Projects\Sanatorium\Sanatorium\obj\Debug\Sanatorium.Add_Registration.resources
 C:\Users\Andrej\Documents\Visual Studio 2015\Projects\Sanatorium\Sanatorium\obj\Debug\Sanatorium.Add_Vacation.resources
 C:\Users\Andrej\Documents\Visual Studio 2015\Projects\Sanatorium\Sanatorium\obj\Debug\Sanatorium.Red_Registr.resources
+C:\Users\Andrej\Documents\Visual Studio 2015\Projects\Sanatorium\Sanatorium\obj\Debug\Sanatorium.Report.resources
+C:\Users\Andrej\Documents\Visual Studio 2015\Projects\Sanatorium\Sanatorium\bin\Debug\MySql.Data.dll
+C:\Users\Andrej\Documents\Visual Studio 2015\Projects\Sanatorium\Sanatorium\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\Andrej\Documents\Visual Studio 2015\Projects\Sanatorium\Sanatorium\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll

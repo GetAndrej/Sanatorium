@@ -21,8 +21,9 @@ namespace Sanatorium
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "sanatoriumDataSet5.registration". При необходимости она может быть перемещена или удалена.
-            this.registrationTableAdapter.Fill(this.sanatoriumDataSet5.registration);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "sanatoriumDataSetR.registration". При необходимости она может быть перемещена или удалена.
+            this.registrationTableAdapter.Fill(this.sanatoriumDataSetR.registration);
+                    
            
         }
 
@@ -35,7 +36,9 @@ namespace Sanatorium
             con.Open();
             MySqlCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "select * from cow where klichka like('%" + textBox1.Text + "%')";
+            // cmd.CommandText = "select * from cow where klichka like('%" + textBox1.Text + "%')";
+            cmd.CommandText = "select * from registration";
+
             cmd.ExecuteNonQuery();
             DataTable dt = new DataTable();
             MySqlDataAdapter da = new MySqlDataAdapter(cmd);
@@ -59,8 +62,8 @@ namespace Sanatorium
                 {
                     MessageBox.Show("Выберите пожалуйста полностью строку");
                 }
-                registrationTableAdapter.Fill(sanatoriumDataSet5.registration);
-                sanatoriumDataSet5.AcceptChanges();
+                registrationTableAdapter.Fill(sanatoriumDataSetR.registration);
+                sanatoriumDataSetR.AcceptChanges();
 
 
             }
@@ -105,6 +108,13 @@ namespace Sanatorium
             SQL sql = new SQL();
             sql.Show();
             Hide();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Report rep = new Report();
+            rep.Show();
+
         }
     }
 }

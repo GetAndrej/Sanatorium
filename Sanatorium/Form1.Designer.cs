@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.idregistrationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
@@ -38,38 +37,32 @@
             this.button9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
-            this.idpersonalaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idmestaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.todaysDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.tillDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.locationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idvacationersDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fromDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.registrationBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.sanatoriumDataSet5 = new Sanatorium.sanatoriumDataSet5();
             this.button6 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.infoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.registrationTableAdapter = new Sanatorium.sanatoriumDataSet5TableAdapters.registrationTableAdapter();
             this.button3 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.registrationBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sanatoriumDataSet5)).BeginInit();
+            this.sanatoriumDataSetR = new Sanatorium.sanatoriumDataSetR();
+            this.registrationBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.registrationTableAdapter = new Sanatorium.sanatoriumDataSetRTableAdapters.registrationTableAdapter();
+            this.idregistrationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idvacationersDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idpersonalaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idmestaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.todayDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fromDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tillDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.locationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.infoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sanatoriumDataSetR)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.registrationBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // idregistrationDataGridViewTextBoxColumn
-            // 
-            this.idregistrationDataGridViewTextBoxColumn.DataPropertyName = "Id_registration";
-            this.idregistrationDataGridViewTextBoxColumn.HeaderText = "Id_registration";
-            this.idregistrationDataGridViewTextBoxColumn.Name = "idregistrationDataGridViewTextBoxColumn";
-            this.idregistrationDataGridViewTextBoxColumn.Width = 50;
             // 
             // checkBox3
             // 
@@ -131,6 +124,7 @@
             this.button8.TabIndex = 58;
             this.button8.Text = "Report";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button7
             // 
@@ -142,26 +136,6 @@
             this.button7.Text = "Search";
             this.button7.UseVisualStyleBackColor = true;
             // 
-            // idpersonalaDataGridViewTextBoxColumn
-            // 
-            this.idpersonalaDataGridViewTextBoxColumn.DataPropertyName = "id_personala";
-            this.idpersonalaDataGridViewTextBoxColumn.HeaderText = "id_personala";
-            this.idpersonalaDataGridViewTextBoxColumn.Name = "idpersonalaDataGridViewTextBoxColumn";
-            this.idpersonalaDataGridViewTextBoxColumn.Width = 50;
-            // 
-            // idmestaDataGridViewTextBoxColumn
-            // 
-            this.idmestaDataGridViewTextBoxColumn.DataPropertyName = "id_mesta";
-            this.idmestaDataGridViewTextBoxColumn.HeaderText = "id_mesta";
-            this.idmestaDataGridViewTextBoxColumn.Name = "idmestaDataGridViewTextBoxColumn";
-            this.idmestaDataGridViewTextBoxColumn.Width = 50;
-            // 
-            // todaysDateDataGridViewTextBoxColumn
-            // 
-            this.todaysDateDataGridViewTextBoxColumn.DataPropertyName = "today\'s date";
-            this.todaysDateDataGridViewTextBoxColumn.HeaderText = "today\'s date";
-            this.todaysDateDataGridViewTextBoxColumn.Name = "todaysDateDataGridViewTextBoxColumn";
-            // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(228, 89);
@@ -169,42 +143,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(284, 28);
             this.textBox1.TabIndex = 56;
-            // 
-            // tillDataGridViewTextBoxColumn
-            // 
-            this.tillDataGridViewTextBoxColumn.DataPropertyName = "till";
-            this.tillDataGridViewTextBoxColumn.HeaderText = "till";
-            this.tillDataGridViewTextBoxColumn.Name = "tillDataGridViewTextBoxColumn";
-            // 
-            // locationDataGridViewTextBoxColumn
-            // 
-            this.locationDataGridViewTextBoxColumn.DataPropertyName = "location";
-            this.locationDataGridViewTextBoxColumn.HeaderText = "location";
-            this.locationDataGridViewTextBoxColumn.Name = "locationDataGridViewTextBoxColumn";
-            this.locationDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // idvacationersDataGridViewTextBoxColumn
-            // 
-            this.idvacationersDataGridViewTextBoxColumn.DataPropertyName = "id_vacationers";
-            this.idvacationersDataGridViewTextBoxColumn.HeaderText = "id_vacationers";
-            this.idvacationersDataGridViewTextBoxColumn.Name = "idvacationersDataGridViewTextBoxColumn";
-            this.idvacationersDataGridViewTextBoxColumn.Width = 50;
-            // 
-            // fromDataGridViewTextBoxColumn
-            // 
-            this.fromDataGridViewTextBoxColumn.DataPropertyName = "from";
-            this.fromDataGridViewTextBoxColumn.HeaderText = "from";
-            this.fromDataGridViewTextBoxColumn.Name = "fromDataGridViewTextBoxColumn";
-            // 
-            // registrationBindingSource
-            // 
-            this.registrationBindingSource.DataMember = "registration";
-            this.registrationBindingSource.DataSource = this.sanatoriumDataSet5;
-            // 
-            // sanatoriumDataSet5
-            // 
-            this.sanatoriumDataSet5.DataSetName = "sanatoriumDataSet5";
-            this.sanatoriumDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // button6
             // 
@@ -249,13 +187,6 @@
             this.label1.TabIndex = 48;
             this.label1.Text = "Registration";
             // 
-            // infoDataGridViewTextBoxColumn
-            // 
-            this.infoDataGridViewTextBoxColumn.DataPropertyName = "info";
-            this.infoDataGridViewTextBoxColumn.HeaderText = "info";
-            this.infoDataGridViewTextBoxColumn.Name = "infoDataGridViewTextBoxColumn";
-            this.infoDataGridViewTextBoxColumn.Width = 200;
-            // 
             // button5
             // 
             this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
@@ -287,7 +218,7 @@
             this.idvacationersDataGridViewTextBoxColumn,
             this.idpersonalaDataGridViewTextBoxColumn,
             this.idmestaDataGridViewTextBoxColumn,
-            this.todaysDateDataGridViewTextBoxColumn,
+            this.todayDataGridViewTextBoxColumn,
             this.fromDataGridViewTextBoxColumn,
             this.tillDataGridViewTextBoxColumn,
             this.locationDataGridViewTextBoxColumn,
@@ -297,10 +228,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(887, 399);
             this.dataGridView1.TabIndex = 52;
-            // 
-            // registrationTableAdapter
-            // 
-            this.registrationTableAdapter.ClearBeforeFill = true;
             // 
             // button3
             // 
@@ -323,6 +250,74 @@
             this.button10.Text = "Update";
             this.button10.UseVisualStyleBackColor = true;
             this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // sanatoriumDataSetR
+            // 
+            this.sanatoriumDataSetR.DataSetName = "sanatoriumDataSetR";
+            this.sanatoriumDataSetR.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // registrationBindingSource
+            // 
+            this.registrationBindingSource.DataMember = "registration";
+            this.registrationBindingSource.DataSource = this.sanatoriumDataSetR;
+            // 
+            // registrationTableAdapter
+            // 
+            this.registrationTableAdapter.ClearBeforeFill = true;
+            // 
+            // idregistrationDataGridViewTextBoxColumn
+            // 
+            this.idregistrationDataGridViewTextBoxColumn.DataPropertyName = "Id_registration";
+            this.idregistrationDataGridViewTextBoxColumn.HeaderText = "Id_registration";
+            this.idregistrationDataGridViewTextBoxColumn.Name = "idregistrationDataGridViewTextBoxColumn";
+            // 
+            // idvacationersDataGridViewTextBoxColumn
+            // 
+            this.idvacationersDataGridViewTextBoxColumn.DataPropertyName = "id_vacationers";
+            this.idvacationersDataGridViewTextBoxColumn.HeaderText = "id_vacationers";
+            this.idvacationersDataGridViewTextBoxColumn.Name = "idvacationersDataGridViewTextBoxColumn";
+            // 
+            // idpersonalaDataGridViewTextBoxColumn
+            // 
+            this.idpersonalaDataGridViewTextBoxColumn.DataPropertyName = "id_personala";
+            this.idpersonalaDataGridViewTextBoxColumn.HeaderText = "id_personala";
+            this.idpersonalaDataGridViewTextBoxColumn.Name = "idpersonalaDataGridViewTextBoxColumn";
+            // 
+            // idmestaDataGridViewTextBoxColumn
+            // 
+            this.idmestaDataGridViewTextBoxColumn.DataPropertyName = "id_mesta";
+            this.idmestaDataGridViewTextBoxColumn.HeaderText = "id_mesta";
+            this.idmestaDataGridViewTextBoxColumn.Name = "idmestaDataGridViewTextBoxColumn";
+            // 
+            // todayDataGridViewTextBoxColumn
+            // 
+            this.todayDataGridViewTextBoxColumn.DataPropertyName = "today";
+            this.todayDataGridViewTextBoxColumn.HeaderText = "today";
+            this.todayDataGridViewTextBoxColumn.Name = "todayDataGridViewTextBoxColumn";
+            // 
+            // fromDataGridViewTextBoxColumn
+            // 
+            this.fromDataGridViewTextBoxColumn.DataPropertyName = "from";
+            this.fromDataGridViewTextBoxColumn.HeaderText = "from";
+            this.fromDataGridViewTextBoxColumn.Name = "fromDataGridViewTextBoxColumn";
+            // 
+            // tillDataGridViewTextBoxColumn
+            // 
+            this.tillDataGridViewTextBoxColumn.DataPropertyName = "till";
+            this.tillDataGridViewTextBoxColumn.HeaderText = "till";
+            this.tillDataGridViewTextBoxColumn.Name = "tillDataGridViewTextBoxColumn";
+            // 
+            // locationDataGridViewTextBoxColumn
+            // 
+            this.locationDataGridViewTextBoxColumn.DataPropertyName = "location";
+            this.locationDataGridViewTextBoxColumn.HeaderText = "location";
+            this.locationDataGridViewTextBoxColumn.Name = "locationDataGridViewTextBoxColumn";
+            // 
+            // infoDataGridViewTextBoxColumn
+            // 
+            this.infoDataGridViewTextBoxColumn.DataPropertyName = "info";
+            this.infoDataGridViewTextBoxColumn.HeaderText = "info";
+            this.infoDataGridViewTextBoxColumn.Name = "infoDataGridViewTextBoxColumn";
             // 
             // Form1
             // 
@@ -349,17 +344,15 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.registrationBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sanatoriumDataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sanatoriumDataSetR)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.registrationBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridViewTextBoxColumn idregistrationDataGridViewTextBoxColumn;
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox1;
@@ -367,26 +360,27 @@
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idpersonalaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idmestaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn todaysDateDataGridViewTextBoxColumn;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tillDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn locationDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idvacationersDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fromDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource registrationBindingSource;
-        private sanatoriumDataSet5 sanatoriumDataSet5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn infoDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private sanatoriumDataSet5TableAdapters.registrationTableAdapter registrationTableAdapter;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button10;
+        private sanatoriumDataSetR sanatoriumDataSetR;
+        private System.Windows.Forms.BindingSource registrationBindingSource;
+        private sanatoriumDataSetRTableAdapters.registrationTableAdapter registrationTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idregistrationDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idvacationersDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idpersonalaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idmestaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn todayDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fromDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tillDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn locationDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn infoDataGridViewTextBoxColumn;
     }
 }

@@ -20,8 +20,10 @@ namespace Sanatorium
        
         private void Add_Registration_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "sanatoriumDataSetR.registration". При необходимости она может быть перемещена или удалена.
+          //  this.registrationTableAdapter.Fill(this.sanatoriumDataSetR.registration);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "sanatoriumDataSet5.registration". При необходимости она может быть перемещена или удалена.
-          //  this.registrationTableAdapter.Fill(this.sanatoriumDataSet5.registration);
+            //  this.registrationTableAdapter.Fill(this.sanatoriumDataSet5.registration);
 
         }
 
@@ -29,7 +31,7 @@ namespace Sanatorium
         {
             try
             {
-                registrationTableAdapter.InsertQuery(Convert.ToInt32(id_registrationTextBox.Text), Convert.ToInt32(id_vacationersTextBox.Text), Convert.ToInt32(id_personalaTextBox.Text), Convert.ToInt32(id_mestaTextBox.Text), today_s_dateDateTimePicker.Value,fromDateTimePicker.Value,tillDateTimePicker.Value,locationTextBox.Text,infoTextBox.Text);
+                registrationTableAdapter.InsertQuery(Convert.ToInt32(id_registrationTextBox.Text), Convert.ToInt32(id_vacationersTextBox.Text), Convert.ToInt32(id_personalaTextBox.Text), Convert.ToInt32(id_mestaTextBox.Text), todayDateTimePicker.Value,fromDateTimePicker.Value,tillDateTimePicker.Value,locationTextBox.Text,infoTextBox.Text);
                 Hide();
             }
             catch (Exception)
@@ -41,6 +43,14 @@ namespace Sanatorium
         private void button2_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void registrationBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.registrationBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.sanatoriumDataSetR);
+
         }
     }
 }

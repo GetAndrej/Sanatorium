@@ -4,7 +4,7 @@
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="sanatoriumConnectionString5" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="sanatoriumConnectionString5 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Sanatorium.Properties.Settings.GlobalReference.Default.sanatoriumConnectionString5" Provider="MySql.Data.MySqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="sanatoriumConnectionString5" IsAppSettingsProperty="true" Modifier="Assembly" Name="sanatoriumConnectionString5 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Sanatorium.Properties.Settings.GlobalReference.Default.sanatoriumConnectionString5" Provider="MySql.Data.MySqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="personalTableAdapter" GeneratorDataComponentClassName="personalTableAdapter" Name="personal" UserDataComponentName="personalTableAdapter">
@@ -185,7 +185,7 @@
               <Mapping SourceColumn="info" DataSetColumn="info" />
             </Mappings>
             <Sources>
-              <DbSource ConnectionRef="sanatoriumConnectionString5 (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DeleteQuery" Modifier="Public" Name="DeleteQuery" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="DeleteQuery">
+              <DbSource ConnectionRef="sanatoriumConnectionString5 (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DeleteQuery" Modifier="Public" Name="DeleteQuery" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="DeleteQuery">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>DELETE FROM `registration` WHERE (`Id_registration` = @p1) </CommandText>
@@ -195,7 +195,7 @@
                   </DbCommand>
                 </DeleteCommand>
               </DbSource>
-              <DbSource ConnectionRef="sanatoriumConnectionString5 (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="InsertQuery" Modifier="Public" Name="InsertQuery" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="InsertQuery">
+              <DbSource ConnectionRef="sanatoriumConnectionString5 (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="InsertQuery" Modifier="Public" Name="InsertQuery" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="InsertQuery">
                 <InsertCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>INSERT INTO `registration` (`Id_registration`, `id_vacationers`, `id_personala`, `id_mesta`, `today's date`, `from`, `till`, `location`, `info`) VALUES (@p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9)</CommandText>
@@ -213,7 +213,7 @@
                   </DbCommand>
                 </InsertCommand>
               </DbSource>
-              <DbSource ConnectionRef="sanatoriumConnectionString5 (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateQuery" Modifier="Public" Name="UpdateQuery" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="UpdateQuery">
+              <DbSource ConnectionRef="sanatoriumConnectionString5 (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateQuery" Modifier="Public" Name="UpdateQuery" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="UpdateQuery">
                 <UpdateCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>UPDATE `registration` SET `Id_registration` = @p1, `id_vacationers` = @p2, `id_personala` = @p3, `id_mesta` = @p4, `today's date` = @p5, `from` = @p6, `till` = @p7, `location` = @p8, `info` = @p9 </CommandText>
@@ -417,7 +417,7 @@
   <xs:element name="sanatoriumDataSet5" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="sanatoriumDataSet5" msprop:Generator_UserDSName="sanatoriumDataSet5">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="personal" msprop:Generator_TableClassName="personalDataTable" msprop:Generator_TableVarName="tablepersonal" msprop:Generator_RowChangedName="personalRowChanged" msprop:Generator_TablePropName="personal" msprop:Generator_RowDeletingName="personalRowDeleting" msprop:Generator_RowChangingName="personalRowChanging" msprop:Generator_RowEvHandlerName="personalRowChangeEventHandler" msprop:Generator_RowDeletedName="personalRowDeleted" msprop:Generator_RowClassName="personalRow" msprop:Generator_UserTableName="personal" msprop:Generator_RowEvArgName="personalRowChangeEvent">
+        <xs:element name="personal" msprop:Generator_TableClassName="personalDataTable" msprop:Generator_TableVarName="tablepersonal" msprop:Generator_TablePropName="personal" msprop:Generator_RowDeletingName="personalRowDeleting" msprop:Generator_RowChangingName="personalRowChanging" msprop:Generator_RowEvHandlerName="personalRowChangeEventHandler" msprop:Generator_RowDeletedName="personalRowDeleted" msprop:Generator_UserTableName="personal" msprop:Generator_RowChangedName="personalRowChanged" msprop:Generator_RowEvArgName="personalRowChangeEvent" msprop:Generator_RowClassName="personalRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Id_personal" msprop:Generator_ColumnVarNameInTable="columnId_personal" msprop:Generator_ColumnPropNameInRow="Id_personal" msprop:Generator_ColumnPropNameInTable="Id_personalColumn" msprop:Generator_UserColumnName="Id_personal" type="xs:int" />
@@ -447,7 +447,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="registration" msprop:Generator_TableClassName="registrationDataTable" msprop:Generator_TableVarName="tableregistration" msprop:Generator_RowChangedName="registrationRowChanged" msprop:Generator_TablePropName="registration" msprop:Generator_RowDeletingName="registrationRowDeleting" msprop:Generator_RowChangingName="registrationRowChanging" msprop:Generator_RowEvHandlerName="registrationRowChangeEventHandler" msprop:Generator_RowDeletedName="registrationRowDeleted" msprop:Generator_RowClassName="registrationRow" msprop:Generator_UserTableName="registration" msprop:Generator_RowEvArgName="registrationRowChangeEvent">
+        <xs:element name="registration" msprop:Generator_TableClassName="registrationDataTable" msprop:Generator_TableVarName="tableregistration" msprop:Generator_TablePropName="registration" msprop:Generator_RowDeletingName="registrationRowDeleting" msprop:Generator_RowChangingName="registrationRowChanging" msprop:Generator_RowEvHandlerName="registrationRowChangeEventHandler" msprop:Generator_RowDeletedName="registrationRowDeleted" msprop:Generator_UserTableName="registration" msprop:Generator_RowChangedName="registrationRowChanged" msprop:Generator_RowEvArgName="registrationRowChangeEvent" msprop:Generator_RowClassName="registrationRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Id_registration" msprop:Generator_ColumnVarNameInTable="columnId_registration" msprop:Generator_ColumnPropNameInRow="Id_registration" msprop:Generator_ColumnPropNameInTable="Id_registrationColumn" msprop:Generator_UserColumnName="Id_registration" type="xs:int" />
@@ -474,7 +474,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="sanatoriy" msprop:Generator_TableClassName="sanatoriyDataTable" msprop:Generator_TableVarName="tablesanatoriy" msprop:Generator_RowChangedName="sanatoriyRowChanged" msprop:Generator_TablePropName="sanatoriy" msprop:Generator_RowDeletingName="sanatoriyRowDeleting" msprop:Generator_RowChangingName="sanatoriyRowChanging" msprop:Generator_RowEvHandlerName="sanatoriyRowChangeEventHandler" msprop:Generator_RowDeletedName="sanatoriyRowDeleted" msprop:Generator_RowClassName="sanatoriyRow" msprop:Generator_UserTableName="sanatoriy" msprop:Generator_RowEvArgName="sanatoriyRowChangeEvent">
+        <xs:element name="sanatoriy" msprop:Generator_TableClassName="sanatoriyDataTable" msprop:Generator_TableVarName="tablesanatoriy" msprop:Generator_TablePropName="sanatoriy" msprop:Generator_RowDeletingName="sanatoriyRowDeleting" msprop:Generator_RowChangingName="sanatoriyRowChanging" msprop:Generator_RowEvHandlerName="sanatoriyRowChangeEventHandler" msprop:Generator_RowDeletedName="sanatoriyRowDeleted" msprop:Generator_UserTableName="sanatoriy" msprop:Generator_RowChangedName="sanatoriyRowChanged" msprop:Generator_RowEvArgName="sanatoriyRowChangeEvent" msprop:Generator_RowClassName="sanatoriyRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Id_mesta" msprop:Generator_ColumnVarNameInTable="columnId_mesta" msprop:Generator_ColumnPropNameInRow="Id_mesta" msprop:Generator_ColumnPropNameInTable="Id_mestaColumn" msprop:Generator_UserColumnName="Id_mesta" type="xs:int" />
@@ -503,7 +503,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="vacationers" msprop:Generator_TableClassName="vacationersDataTable" msprop:Generator_TableVarName="tablevacationers" msprop:Generator_RowChangedName="vacationersRowChanged" msprop:Generator_TablePropName="vacationers" msprop:Generator_RowDeletingName="vacationersRowDeleting" msprop:Generator_RowChangingName="vacationersRowChanging" msprop:Generator_RowEvHandlerName="vacationersRowChangeEventHandler" msprop:Generator_RowDeletedName="vacationersRowDeleted" msprop:Generator_RowClassName="vacationersRow" msprop:Generator_UserTableName="vacationers" msprop:Generator_RowEvArgName="vacationersRowChangeEvent">
+        <xs:element name="vacationers" msprop:Generator_TableClassName="vacationersDataTable" msprop:Generator_TableVarName="tablevacationers" msprop:Generator_TablePropName="vacationers" msprop:Generator_RowDeletingName="vacationersRowDeleting" msprop:Generator_RowChangingName="vacationersRowChanging" msprop:Generator_RowEvHandlerName="vacationersRowChangeEventHandler" msprop:Generator_RowDeletedName="vacationersRowDeleted" msprop:Generator_UserTableName="vacationers" msprop:Generator_RowChangedName="vacationersRowChanged" msprop:Generator_RowEvArgName="vacationersRowChangeEvent" msprop:Generator_RowClassName="vacationersRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Id_vacationers" msprop:Generator_ColumnVarNameInTable="columnId_vacationers" msprop:Generator_ColumnPropNameInRow="Id_vacationers" msprop:Generator_ColumnPropNameInTable="Id_vacationersColumn" msprop:Generator_UserColumnName="Id_vacationers" type="xs:int" />
@@ -557,9 +557,9 @@
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="per" msdata:parent="registration" msdata:child="personal" msdata:parentkey="id_personala" msdata:childkey="Id_personal" msprop:Generator_UserChildTable="personal" msprop:Generator_ChildPropName="GetpersonalRows" msprop:Generator_UserRelationName="per" msprop:Generator_ParentPropName="registrationRow" msprop:Generator_RelationVarName="relationper" msprop:Generator_UserParentTable="registration" />
-      <msdata:Relationship name="san" msdata:parent="registration" msdata:child="sanatoriy" msdata:parentkey="id_mesta" msdata:childkey="Id_mesta" msprop:Generator_UserChildTable="sanatoriy" msprop:Generator_ChildPropName="GetsanatoriyRows" msprop:Generator_UserRelationName="san" msprop:Generator_RelationVarName="relationsan" msprop:Generator_UserParentTable="registration" msprop:Generator_ParentPropName="registrationRow" />
-      <msdata:Relationship name="voc" msdata:parent="registration" msdata:child="vacationers" msdata:parentkey="id_vacationers" msdata:childkey="Id_vacationers" msprop:Generator_UserChildTable="vacationers" msprop:Generator_ChildPropName="GetvacationersRows" msprop:Generator_UserRelationName="voc" msprop:Generator_RelationVarName="relationvoc" msprop:Generator_UserParentTable="registration" msprop:Generator_ParentPropName="registrationRow" />
+      <msdata:Relationship name="per" msdata:parent="registration" msdata:child="personal" msdata:parentkey="id_personala" msdata:childkey="Id_personal" msprop:Generator_UserChildTable="personal" msprop:Generator_ChildPropName="GetpersonalRows" msprop:Generator_UserRelationName="per" msprop:Generator_RelationVarName="relationper" msprop:Generator_UserParentTable="registration" msprop:Generator_ParentPropName="registrationRow" />
+      <msdata:Relationship name="san" msdata:parent="registration" msdata:child="sanatoriy" msdata:parentkey="id_mesta" msdata:childkey="Id_mesta" msprop:Generator_UserChildTable="sanatoriy" msprop:Generator_ChildPropName="GetsanatoriyRows" msprop:Generator_UserRelationName="san" msprop:Generator_ParentPropName="registrationRow" msprop:Generator_RelationVarName="relationsan" msprop:Generator_UserParentTable="registration" />
+      <msdata:Relationship name="voc" msdata:parent="registration" msdata:child="vacationers" msdata:parentkey="id_vacationers" msdata:childkey="Id_vacationers" msprop:Generator_UserChildTable="vacationers" msprop:Generator_ChildPropName="GetvacationersRows" msprop:Generator_UserRelationName="voc" msprop:Generator_ParentPropName="registrationRow" msprop:Generator_RelationVarName="relationvoc" msprop:Generator_UserParentTable="registration" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>
