@@ -116,7 +116,7 @@
             this.dataGridView1.DataSource = this.sanatoriyBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(12, 71);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(763, 390);
+            this.dataGridView1.Size = new System.Drawing.Size(776, 390);
             this.dataGridView1.TabIndex = 25;
             // 
             // label1
@@ -148,12 +148,14 @@
             this.idmestaDataGridViewTextBoxColumn.DataPropertyName = "Id_mesta";
             this.idmestaDataGridViewTextBoxColumn.HeaderText = "Id_mesta";
             this.idmestaDataGridViewTextBoxColumn.Name = "idmestaDataGridViewTextBoxColumn";
+            this.idmestaDataGridViewTextBoxColumn.Width = 60;
             // 
             // namemDataGridViewTextBoxColumn
             // 
             this.namemDataGridViewTextBoxColumn.DataPropertyName = "name_m";
             this.namemDataGridViewTextBoxColumn.HeaderText = "name_m";
             this.namemDataGridViewTextBoxColumn.Name = "namemDataGridViewTextBoxColumn";
+            this.namemDataGridViewTextBoxColumn.Width = 170;
             // 
             // colmestDataGridViewTextBoxColumn
             // 
@@ -166,18 +168,20 @@
             this.addreddmDataGridViewTextBoxColumn.DataPropertyName = "addredd_m";
             this.addreddmDataGridViewTextBoxColumn.HeaderText = "addredd_m";
             this.addreddmDataGridViewTextBoxColumn.Name = "addreddmDataGridViewTextBoxColumn";
+            this.addreddmDataGridViewTextBoxColumn.Width = 200;
             // 
             // informationDataGridViewTextBoxColumn
             // 
             this.informationDataGridViewTextBoxColumn.DataPropertyName = "information";
             this.informationDataGridViewTextBoxColumn.HeaderText = "information";
             this.informationDataGridViewTextBoxColumn.Name = "informationDataGridViewTextBoxColumn";
+            this.informationDataGridViewTextBoxColumn.Width = 200;
             // 
             // Sanatorium2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(780, 471);
+            this.ClientSize = new System.Drawing.Size(800, 471);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);

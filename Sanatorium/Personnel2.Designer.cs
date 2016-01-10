@@ -53,14 +53,14 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(502, 47);
+            this.textBox1.Location = new System.Drawing.Point(515, 47);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(192, 20);
+            this.textBox1.Size = new System.Drawing.Size(243, 20);
             this.textBox1.TabIndex = 31;
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(700, 45);
+            this.button5.Location = new System.Drawing.Point(764, 45);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 30;
@@ -118,7 +118,7 @@
             this.dataGridView1.DataSource = this.personalBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(12, 74);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(763, 430);
+            this.dataGridView1.Size = new System.Drawing.Size(830, 430);
             this.dataGridView1.TabIndex = 25;
             // 
             // label1
@@ -150,12 +150,14 @@
             this.idpersonalDataGridViewTextBoxColumn.DataPropertyName = "Id_personal";
             this.idpersonalDataGridViewTextBoxColumn.HeaderText = "Id_personal";
             this.idpersonalDataGridViewTextBoxColumn.Name = "idpersonalDataGridViewTextBoxColumn";
+            this.idpersonalDataGridViewTextBoxColumn.Width = 70;
             // 
             // nameDataGridViewTextBoxColumn
             // 
             this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
             this.nameDataGridViewTextBoxColumn.HeaderText = "name";
             this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.Width = 150;
             // 
             // birthdayDataGridViewTextBoxColumn
             // 
@@ -168,24 +170,27 @@
             this.phoneDataGridViewTextBoxColumn.DataPropertyName = "phone";
             this.phoneDataGridViewTextBoxColumn.HeaderText = "phone";
             this.phoneDataGridViewTextBoxColumn.Name = "phoneDataGridViewTextBoxColumn";
+            this.phoneDataGridViewTextBoxColumn.Width = 150;
             // 
             // emailDataGridViewTextBoxColumn
             // 
             this.emailDataGridViewTextBoxColumn.DataPropertyName = "email";
             this.emailDataGridViewTextBoxColumn.HeaderText = "email";
             this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            this.emailDataGridViewTextBoxColumn.Width = 150;
             // 
             // addressDataGridViewTextBoxColumn
             // 
             this.addressDataGridViewTextBoxColumn.DataPropertyName = "address";
             this.addressDataGridViewTextBoxColumn.HeaderText = "address";
             this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
+            this.addressDataGridViewTextBoxColumn.Width = 170;
             // 
             // Personnel2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 514);
+            this.ClientSize = new System.Drawing.Size(851, 514);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);

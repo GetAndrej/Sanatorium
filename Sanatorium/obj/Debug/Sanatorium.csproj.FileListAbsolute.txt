@@ -12,3 +12,6 @@ C:\Users\Andrej\Documents\Visual Studio 2015\Projects\Sanatorium\Sanatorium\obj\
 C:\Users\Andrej\Documents\Visual Studio 2015\Projects\Sanatorium\Sanatorium\obj\Debug\Sanatorium.Vacationers2.resources
 C:\Users\Andrej\Documents\Visual Studio 2015\Projects\Sanatorium\Sanatorium\obj\Debug\Sanatorium.Personnel2.resources
 C:\Users\Andrej\Documents\Visual Studio 2015\Projects\Sanatorium\Sanatorium\obj\Debug\Sanatorium.Sanatorium2.resources
+C:\Users\Andrej\Documents\Visual Studio 2015\Projects\Sanatorium\Sanatorium\obj\Debug\Sanatorium.Add_Registration.resources
+C:\Users\Andrej\Documents\Visual Studio 2015\Projects\Sanatorium\Sanatorium\obj\Debug\Sanatorium.Add_Vacation.resources
+C:\Users\Andrej\Documents\Visual Studio 2015\Projects\Sanatorium\Sanatorium\obj\Debug\Sanatorium.Red_Registr.resources

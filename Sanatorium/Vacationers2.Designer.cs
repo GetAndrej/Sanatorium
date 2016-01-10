@@ -36,31 +36,31 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.sanatoriumDataSet5 = new Sanatorium.sanatoriumDataSet5();
-            this.vacationersBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.vacationersTableAdapter = new Sanatorium.sanatoriumDataSet5TableAdapters.vacationersTableAdapter();
             this.idvacationersDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.namevocDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.telephoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.homeaddressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vacationersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.sanatoriumDataSet5 = new Sanatorium.sanatoriumDataSet5();
+            this.label1 = new System.Windows.Forms.Label();
+            this.vacationersTableAdapter = new Sanatorium.sanatoriumDataSet5TableAdapters.vacationersTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sanatoriumDataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vacationersBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sanatoriumDataSet5)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(502, 41);
+            this.textBox1.Location = new System.Drawing.Point(514, 41);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(192, 20);
+            this.textBox1.Size = new System.Drawing.Size(232, 20);
             this.textBox1.TabIndex = 23;
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(700, 39);
+            this.button5.Location = new System.Drawing.Point(752, 39);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 22;
@@ -93,6 +93,7 @@
             this.button2.TabIndex = 19;
             this.button2.Text = "Add";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -118,8 +119,60 @@
             this.dataGridView1.DataSource = this.vacationersBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(12, 68);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(763, 411);
+            this.dataGridView1.Size = new System.Drawing.Size(815, 411);
             this.dataGridView1.TabIndex = 17;
+            // 
+            // idvacationersDataGridViewTextBoxColumn
+            // 
+            this.idvacationersDataGridViewTextBoxColumn.DataPropertyName = "Id_vacationers";
+            this.idvacationersDataGridViewTextBoxColumn.HeaderText = "Id_vacationers";
+            this.idvacationersDataGridViewTextBoxColumn.Name = "idvacationersDataGridViewTextBoxColumn";
+            this.idvacationersDataGridViewTextBoxColumn.Width = 50;
+            // 
+            // namevocDataGridViewTextBoxColumn
+            // 
+            this.namevocDataGridViewTextBoxColumn.DataPropertyName = "name_voc";
+            this.namevocDataGridViewTextBoxColumn.HeaderText = "name_voc";
+            this.namevocDataGridViewTextBoxColumn.Name = "namevocDataGridViewTextBoxColumn";
+            this.namevocDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // ageDataGridViewTextBoxColumn
+            // 
+            this.ageDataGridViewTextBoxColumn.DataPropertyName = "age";
+            this.ageDataGridViewTextBoxColumn.HeaderText = "age";
+            this.ageDataGridViewTextBoxColumn.Name = "ageDataGridViewTextBoxColumn";
+            this.ageDataGridViewTextBoxColumn.Width = 70;
+            // 
+            // telephoneDataGridViewTextBoxColumn
+            // 
+            this.telephoneDataGridViewTextBoxColumn.DataPropertyName = "telephone";
+            this.telephoneDataGridViewTextBoxColumn.HeaderText = "telephone";
+            this.telephoneDataGridViewTextBoxColumn.Name = "telephoneDataGridViewTextBoxColumn";
+            this.telephoneDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
+            this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            this.emailDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // homeaddressDataGridViewTextBoxColumn
+            // 
+            this.homeaddressDataGridViewTextBoxColumn.DataPropertyName = "home_address";
+            this.homeaddressDataGridViewTextBoxColumn.HeaderText = "home_address";
+            this.homeaddressDataGridViewTextBoxColumn.Name = "homeaddressDataGridViewTextBoxColumn";
+            this.homeaddressDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // vacationersBindingSource
+            // 
+            this.vacationersBindingSource.DataMember = "vacationers";
+            this.vacationersBindingSource.DataSource = this.sanatoriumDataSet5;
+            // 
+            // sanatoriumDataSet5
+            // 
+            this.sanatoriumDataSet5.DataSetName = "sanatoriumDataSet5";
+            this.sanatoriumDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label1
             // 
@@ -131,61 +184,15 @@
             this.label1.TabIndex = 16;
             this.label1.Text = "Vacationers";
             // 
-            // sanatoriumDataSet5
-            // 
-            this.sanatoriumDataSet5.DataSetName = "sanatoriumDataSet5";
-            this.sanatoriumDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // vacationersBindingSource
-            // 
-            this.vacationersBindingSource.DataMember = "vacationers";
-            this.vacationersBindingSource.DataSource = this.sanatoriumDataSet5;
-            // 
             // vacationersTableAdapter
             // 
             this.vacationersTableAdapter.ClearBeforeFill = true;
-            // 
-            // idvacationersDataGridViewTextBoxColumn
-            // 
-            this.idvacationersDataGridViewTextBoxColumn.DataPropertyName = "Id_vacationers";
-            this.idvacationersDataGridViewTextBoxColumn.HeaderText = "Id_vacationers";
-            this.idvacationersDataGridViewTextBoxColumn.Name = "idvacationersDataGridViewTextBoxColumn";
-            // 
-            // namevocDataGridViewTextBoxColumn
-            // 
-            this.namevocDataGridViewTextBoxColumn.DataPropertyName = "name_voc";
-            this.namevocDataGridViewTextBoxColumn.HeaderText = "name_voc";
-            this.namevocDataGridViewTextBoxColumn.Name = "namevocDataGridViewTextBoxColumn";
-            // 
-            // ageDataGridViewTextBoxColumn
-            // 
-            this.ageDataGridViewTextBoxColumn.DataPropertyName = "age";
-            this.ageDataGridViewTextBoxColumn.HeaderText = "age";
-            this.ageDataGridViewTextBoxColumn.Name = "ageDataGridViewTextBoxColumn";
-            // 
-            // telephoneDataGridViewTextBoxColumn
-            // 
-            this.telephoneDataGridViewTextBoxColumn.DataPropertyName = "telephone";
-            this.telephoneDataGridViewTextBoxColumn.HeaderText = "telephone";
-            this.telephoneDataGridViewTextBoxColumn.Name = "telephoneDataGridViewTextBoxColumn";
-            // 
-            // emailDataGridViewTextBoxColumn
-            // 
-            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
-            this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
-            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
-            // 
-            // homeaddressDataGridViewTextBoxColumn
-            // 
-            this.homeaddressDataGridViewTextBoxColumn.DataPropertyName = "home_address";
-            this.homeaddressDataGridViewTextBoxColumn.HeaderText = "home_address";
-            this.homeaddressDataGridViewTextBoxColumn.Name = "homeaddressDataGridViewTextBoxColumn";
             // 
             // Vacationers2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(783, 486);
+            this.ClientSize = new System.Drawing.Size(839, 486);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -198,8 +205,8 @@
             this.Text = "Vacationers2";
             this.Load += new System.EventHandler(this.Vacationers2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sanatoriumDataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vacationersBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sanatoriumDataSet5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

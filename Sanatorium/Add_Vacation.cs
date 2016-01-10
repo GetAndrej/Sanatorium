@@ -10,32 +10,32 @@ using System.Windows.Forms;
 
 namespace Sanatorium
 {
-    public partial class Vacationers2 : Form
+    public partial class Add_Vacation : Form
     {
-        public Vacationers2()
+        public Add_Vacation()
         {
             InitializeComponent();
         }
 
-        private void Vacationers2_Load(object sender, EventArgs e)
+       
+
+        private void Add_Vacation_Load(object sender, EventArgs e)
         {
             // TODO: данная строка кода позволяет загрузить данные в таблицу "sanatoriumDataSet5.vacationers". При необходимости она может быть перемещена или удалена.
-            this.vacationersTableAdapter.Fill(this.sanatoriumDataSet5.vacationers);
+          //  this.vacationersTableAdapter.Fill(this.sanatoriumDataSet5.vacationers);
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form1 form = new Form1();
-            form.Show();
+            try { 
+            vacationersTableAdapter.InsertQuery2(Convert.ToInt32(id_vacationersTextBox.Text), name_vocTextBox.Text, Convert.ToInt32(ageTextBox.Text), telephoneTextBox.Text, emailTextBox.Text, home_addressTextBox.Text);
             Hide();
         }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Add_Vacation vac = new Add_Vacation();
-            vac.Show();
-            
-        }
+            catch (Exception)
+            {
+                MessageBox.Show("Проверьте на правильность ввода");
+            }
+}
     }
 }
