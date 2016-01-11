@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
@@ -36,7 +30,6 @@ namespace Sanatorium
             con.Open();
             MySqlCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            // cmd.CommandText = "select * from cow where klichka like('%" + textBox1.Text + "%')";
             cmd.CommandText = "select * from registration";
 
             cmd.ExecuteNonQuery();
@@ -115,6 +108,86 @@ namespace Sanatorium
             Report rep = new Report();
             rep.Show();
 
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            MySqlConnection con = new MySqlConnection(constring);
+            con.Open();
+            MySqlCommand cmd = con.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            // поиск по vacationers и по personal 
+            cmd.CommandText = "select * from registration where id_vacationers like('%" + textBox1.Text + "%') or id_personala like('%" + textBox1.Text + "%')";
+            //поиск только по vacationers
+            cmd.CommandText = "select * from registration where id_vacationers like('%" + textBox1.Text + "%')";
+            cmd.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
+
+
+            con.Close();
+        }
+
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                dataGridView1.Sort(dataGridView1.Columns[Convert.ToInt32(textBox2.Text)], 0);
+            }
+            catch
+            {
+                MessageBox.Show("Ведите от 1 до 9!");
+            }
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                MySqlConnection con = new MySqlConnection(constring);
+                con.Open();
+                MySqlCommand cmd = con.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "select registration.* from registration, vacationers where (vacationers.Id_vacationers = registration.id_vacationers) and vacationers.age<20";
+
+                cmd.ExecuteNonQuery();
+                DataTable dt = new DataTable();
+                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                da.Fill(dt);
+                dataGridView1.DataSource = dt;
+                con.Close();
+            }
+            catch
+            {
+                MessageBox.Show("нет!(");
+              
+            }
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                MySqlConnection con = new MySqlConnection(constring);
+                con.Open();
+                MySqlCommand cmd = con.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "select * from registration where info > (select avg(info) from registration)";
+                cmd.ExecuteNonQuery();
+                DataTable dt = new DataTable();
+                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                da.Fill(dt);
+                dataGridView1.DataSource = dt;
+                con.Close();
+            }
+            catch
+            {
+                MessageBox.Show("нет!(");
+
+            }
         }
     }
 }

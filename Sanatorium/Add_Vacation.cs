@@ -34,8 +34,13 @@ namespace Sanatorium
         }
             catch (Exception)
             {
-                MessageBox.Show("Проверьте на правильность ввода");
+                MessageBox.Show("Check for proper input");
             }
 }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

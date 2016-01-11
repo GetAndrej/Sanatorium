@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -45,10 +44,10 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.registrationBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.sanatoriumDataSetR = new Sanatorium.sanatoriumDataSetR();
             this.button3 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
-            this.sanatoriumDataSetR = new Sanatorium.sanatoriumDataSetR();
-            this.registrationBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.registrationTableAdapter = new Sanatorium.sanatoriumDataSetRTableAdapters.registrationTableAdapter();
             this.idregistrationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idvacationersDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,40 +58,35 @@
             this.tillDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.locationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.infoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button11 = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sanatoriumDataSetR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.registrationBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sanatoriumDataSetR)).BeginInit();
             this.SuspendLayout();
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(293, 544);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(80, 17);
-            this.checkBox3.TabIndex = 63;
-            this.checkBox3.Text = "checkBox3";
-            this.checkBox3.UseVisualStyleBackColor = true;
             // 
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
             this.checkBox2.Location = new System.Drawing.Point(195, 544);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(80, 17);
+            this.checkBox2.Size = new System.Drawing.Size(75, 17);
             this.checkBox2.TabIndex = 62;
-            this.checkBox2.Text = "checkBox2";
+            this.checkBox2.Text = "Expensive";
             this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(109, 544);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(80, 17);
+            this.checkBox1.Size = new System.Drawing.Size(57, 17);
             this.checkBox1.TabIndex = 61;
-            this.checkBox1.Text = "checkBox1";
+            this.checkBox1.Text = "Minors";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // label2
             // 
@@ -135,6 +129,7 @@
             this.button7.TabIndex = 57;
             this.button7.Text = "Search";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // textBox1
             // 
@@ -229,6 +224,16 @@
             this.dataGridView1.Size = new System.Drawing.Size(887, 399);
             this.dataGridView1.TabIndex = 52;
             // 
+            // registrationBindingSource
+            // 
+            this.registrationBindingSource.DataMember = "registration";
+            this.registrationBindingSource.DataSource = this.sanatoriumDataSetR;
+            // 
+            // sanatoriumDataSetR
+            // 
+            this.sanatoriumDataSetR.DataSetName = "sanatoriumDataSetR";
+            this.sanatoriumDataSetR.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -251,16 +256,6 @@
             this.button10.UseVisualStyleBackColor = true;
             this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
-            // sanatoriumDataSetR
-            // 
-            this.sanatoriumDataSetR.DataSetName = "sanatoriumDataSetR";
-            this.sanatoriumDataSetR.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // registrationBindingSource
-            // 
-            this.registrationBindingSource.DataMember = "registration";
-            this.registrationBindingSource.DataSource = this.sanatoriumDataSetR;
-            // 
             // registrationTableAdapter
             // 
             this.registrationTableAdapter.ClearBeforeFill = true;
@@ -270,24 +265,28 @@
             this.idregistrationDataGridViewTextBoxColumn.DataPropertyName = "Id_registration";
             this.idregistrationDataGridViewTextBoxColumn.HeaderText = "Id_registration";
             this.idregistrationDataGridViewTextBoxColumn.Name = "idregistrationDataGridViewTextBoxColumn";
+            this.idregistrationDataGridViewTextBoxColumn.Width = 60;
             // 
             // idvacationersDataGridViewTextBoxColumn
             // 
             this.idvacationersDataGridViewTextBoxColumn.DataPropertyName = "id_vacationers";
             this.idvacationersDataGridViewTextBoxColumn.HeaderText = "id_vacationers";
             this.idvacationersDataGridViewTextBoxColumn.Name = "idvacationersDataGridViewTextBoxColumn";
+            this.idvacationersDataGridViewTextBoxColumn.Width = 60;
             // 
             // idpersonalaDataGridViewTextBoxColumn
             // 
             this.idpersonalaDataGridViewTextBoxColumn.DataPropertyName = "id_personala";
             this.idpersonalaDataGridViewTextBoxColumn.HeaderText = "id_personala";
             this.idpersonalaDataGridViewTextBoxColumn.Name = "idpersonalaDataGridViewTextBoxColumn";
+            this.idpersonalaDataGridViewTextBoxColumn.Width = 60;
             // 
             // idmestaDataGridViewTextBoxColumn
             // 
             this.idmestaDataGridViewTextBoxColumn.DataPropertyName = "id_mesta";
             this.idmestaDataGridViewTextBoxColumn.HeaderText = "id_mesta";
             this.idmestaDataGridViewTextBoxColumn.Name = "idmestaDataGridViewTextBoxColumn";
+            this.idmestaDataGridViewTextBoxColumn.Width = 60;
             // 
             // todayDataGridViewTextBoxColumn
             // 
@@ -312,20 +311,51 @@
             this.locationDataGridViewTextBoxColumn.DataPropertyName = "location";
             this.locationDataGridViewTextBoxColumn.HeaderText = "location";
             this.locationDataGridViewTextBoxColumn.Name = "locationDataGridViewTextBoxColumn";
+            this.locationDataGridViewTextBoxColumn.Width = 150;
             // 
             // infoDataGridViewTextBoxColumn
             // 
             this.infoDataGridViewTextBoxColumn.DataPropertyName = "info";
             this.infoDataGridViewTextBoxColumn.HeaderText = "info";
             this.infoDataGridViewTextBoxColumn.Name = "infoDataGridViewTextBoxColumn";
+            this.infoDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(822, 540);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(75, 23);
+            this.button11.TabIndex = 65;
+            this.button11.Text = "Sort";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(636, 542);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(180, 20);
+            this.textBox2.TabIndex = 66;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Location = new System.Drawing.Point(491, 541);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(139, 21);
+            this.label3.TabIndex = 67;
+            this.label3.Text = "Sort from 1 by 8:";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(909, 573);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.button11);
             this.Controls.Add(this.button10);
-            this.Controls.Add(this.checkBox3);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label2);
@@ -345,15 +375,14 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sanatoriumDataSetR)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.registrationBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sanatoriumDataSetR)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label label2;
@@ -382,5 +411,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn tillDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn locationDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn infoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label3;
     }
 }

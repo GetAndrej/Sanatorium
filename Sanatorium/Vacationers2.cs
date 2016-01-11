@@ -37,5 +37,25 @@ namespace Sanatorium
             vac.Show();
             
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Вы действительно хотите подтвердить удаление?", "Удаление данных", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+
+                try
+                {
+                    vacationersTableAdapter.DeleteQuery(Convert.ToInt32(dataGridView1.SelectedRows[0].Cells[0].Value));
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Выберите пожалуйста полностью строку");
+                }
+                vacationersTableAdapter.Fill(sanatoriumDataSet5.vacationers);
+                sanatoriumDataSet5.AcceptChanges();
+
+
+            }
+        }
     }
 }
